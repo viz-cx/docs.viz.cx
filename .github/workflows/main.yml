@@ -21,4 +21,4 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         BUILD_SCRIPT: |
           npm install && npm run-script build
-          cd docs/.vuepress/dist && echo 'docs.viz.cx' > CNAME
+          echo 'docs.viz.cx' > docs/.vuepress/dist/CNAME
