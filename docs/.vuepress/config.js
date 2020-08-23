@@ -43,24 +43,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    navbar: true,
-    repo: "",
+    repo: "viz-cx/docs.viz.cx",
     editLinks: true,
-    docsDir: "/",
-    editLinkText: "Edit",
-    lastUpdated: true,
+    docsDir: "docs",
     nav: [
       // {text: 'Guide', link: '/guide/'}
     ],
-    sidebar: {
-      "/": [
-        {
-          title: "VIZ blockchain",
-          collapsable: false,
-          children: [""],
-        },
-      ],
-    },
     locales: {
       "/": {
         label: "English",
@@ -73,6 +61,15 @@ module.exports = {
             message: "New content is available.",
             buttonText: "Refresh",
           },
+        },
+        sidebar: {
+          "/": [
+            {
+              title: "VIZ blockchain",
+              collapsable: false,
+              children: [""],
+            },
+          ],
         },
       },
       "/ru/": {
