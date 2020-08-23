@@ -3,19 +3,16 @@
   "version": "0.0.1",
   "description": "VIZ blockchain documentation",
   "main": "index.js",
-  "authors": {
-    "name": "",
-    "email": ""
-  },
   "repository": "https://github.com/viz-cx/docs.viz.cx",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "broken-links": "vuepress check-md docs"
   },
-  "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.3.1",
     "@vuepress/plugin-back-to-top": "^1.3.1",
-    "@vuepress/plugin-medium-zoom": "^1.3.1"
+    "@vuepress/plugin-medium-zoom": "^1.3.1",
+    "vuepress": "^1.3.1",
+    "vuepress-plugin-check-md": "^0.0.2"
   }
 }

@@ -114,5 +114,9 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+  plugins: [
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
+    "check-md",
+  ],
 };
