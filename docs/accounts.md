@@ -13,7 +13,7 @@ An account has four key pairs (public and private):
 - regular key,
 - communication key.
 
-Each public key must be generated from different private keys using an elliptic cryptography algorithm for the curve [secp256k1] (https://en.bitcoin.it/wiki/Secp256k1) (the same curve is used in Bitcoin).
+Each public key must be generated from different private keys using an elliptic cryptography algorithm for the curve [secp256k1](https://en.bitcoin.it/wiki/Secp256k1) (the same curve is used in Bitcoin).
 
   The table below shows the parameters for secp256k1*
 
@@ -113,7 +113,7 @@ Anonymous accounts have the same rights as other accounts. And with popular gate
 
 Each account on the blockchain has a supply of energy, which is measured as a percentage. The maximum energy value is 100%, the minimum can be -100%, that is, less than 0%.
 
-Energy is needed to send [awards] (./economy.md#awards) to other users. If there is not enough energy, then the account will not be able to reward the participant with the required amount of tokens, and if the energy is equal to or less than 0%, then the account will not be able to send the reward at all. However, he will still be able to perform other operations on the blockchain, for example, transfer tokens between accounts, vote for delegates and do whatever he can with 100% energy. Read more about the awards in the [Activity awards] section (./ecomomy.md#award).
+Energy is needed to send [awards](./economy.md#awards) to other users. If there is not enough energy, then the account will not be able to reward the participant with the required amount of tokens, and if the energy is equal to or less than 0%, then the account will not be able to send the reward at all. However, he will still be able to perform other operations on the blockchain, for example, transfer tokens between accounts, vote for delegates and do whatever he can with 100% energy. Read more about the awards in the [Activity awards] section (./ecomomy.md#award).
 
 Energy is wasted in two cases. First, when the account rewards the participant. In this case, the user himself indicates how much energy he wants to spend, and the size of the reward depends on this amount. Second, when the account [delegates shares](./economy.md#shares) to another user.
 
@@ -131,7 +131,7 @@ To get started, check out the table of information types that blockchain uses:
 
 | Type         | Example               | Range                | Description                                                     |
 | ------------ | --------------------- | -------------------- | ------------------------------------------------------------ |
-| VIZ asset    | "1.000 VIZ"           | from 0.001 VIZ       | Number of [liquid tokens] (./economy.md#viz-token). A string with a decimal number with no more than 3 digits after a period and a mandatory VIZ postscript separated by a space. <br> Example: "1.123 VIZ" |
+| VIZ asset    | "1.000 VIZ"           | from 0.001 VIZ       | Number of [liquid tokens](./economy.md#viz-token). A string with a decimal number with no more than 3 digits after a period and a mandatory VIZ postscript separated by a space. <br> Example: "1.123 VIZ" |
 | SHARES актив | "1.000000 SHARES"     | from 0.000001 SHARES | Number of [share tokens](./economy.md#shares). A string with a decimal number with no more than 6 digits after the period and the obligatory SHARES postscript separated by a space. <br> Example: "1.123456 SHARES" |
 | µShares      | 1000000               | from 1               | Number of micro [share tokens](./economy.md#shares). 1 = 0.000001 SHARES; 1000000 = 1.000000 SHARES. Integer.  |
 | Percentage   | 1000                  | from 0 до 10000      | Percentage in whole number format. 0.01% = 1; 1% = 100; 100% = 10000; |
@@ -173,7 +173,7 @@ Added: 1.0.0
 
 [Format](#props-desc-table): SHARES asset
 
-The number of [clear Shares] (./economy.md#clear-shares) of the account.
+The number of [clear Shares](./economy.md#clear-shares) of the account.
 
 ### delegated_vesting_shares
 
@@ -205,7 +205,7 @@ Added: 1.0.0
 
 [Format](#props-desc-table): µShares
 
-The number of Shares that the account has requested for [share reduction] (./economy.md#shares-reduction).
+The number of Shares that the account has requested for [share reduction](./economy.md#shares-reduction).
 
 ### withdraw_routes
 
@@ -245,7 +245,7 @@ Added: 1.0.0
 
 [Format](#props-desc-table): Integer
 
-The number of [awards] (./economy.md#awards) that the account submitted. Up to 4 hard forks, this parameter showed the number of votes that the account gave to different posts.
+The number of [awards](./economy.md#awards) that the account submitted. Up to 4 hard forks, this parameter showed the number of votes that the account gave to different posts.
 
 ### created
 
@@ -471,7 +471,7 @@ Deprecated: 2.0.0
 
 Added: 1.0.0
 
-[Format] (% E2% 84% 96props-desc-table): µShares
+[Format](#props-desc-table): µShares
 
 The number of µShares (µShares) that the account received as beneficiary payments from supervised posts up to 4 hard forks. Obsolete due to a change in the economic model - rejection of positioning as a blogging platform.
 
@@ -501,7 +501,7 @@ Deprecated: 2.0.0
 
 Added: 1.0.0
 
-[Format] (##% E2% 84% 96props-desc-tableprops-desc-table): Time
+[Format](#props-desc-table): Time
 
 The time the last post was posted. Obsolete due to a change in the economic model - rejection of positioning as a blogging platform.
 

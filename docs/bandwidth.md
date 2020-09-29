@@ -4,7 +4,7 @@
 
 Throughput is the maximum size of a transaction in bytes that
 the user can send to the blockchain at a given time. Throughput volume
-the ability depends on the number of [Shares] (./economy.md#shares) in the user's account.
+the ability depends on the number of [Shares](./economy.md#shares) in the user's account.
 
 ## Description
 
