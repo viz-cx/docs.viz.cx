@@ -18,8 +18,8 @@ module.exports = {
     },
     "/ru/": {
       lang: "ru",
-      title: "ВИЗ",
-      description: "Блокчейн ВИЗ",
+      title: "VIZ",
+      description: "Блокчейн VIZ",
     },
   },
 
@@ -101,7 +101,7 @@ module.exports = {
         sidebar: {
           "/ru/": [
             {
-              title: "Блокчейн ВИЗ",
+              title: "Блокчейн VIZ",
               collapsable: false,
               children: [
                 "",
