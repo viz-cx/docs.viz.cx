@@ -46,6 +46,7 @@ module.exports = {
    */
   themeConfig: {
     repo: "viz-cx/docs.viz.cx",
+    logo: "/logo.png",
     editLinks: true,
     docsDir: "docs",
     nav: [
