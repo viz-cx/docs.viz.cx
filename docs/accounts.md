@@ -27,7 +27,7 @@ Each public key must be generated from different private keys using an elliptic 
 | n        | 0xffffffff ffffffff ffffffff fffffffe baaedce6 af48a03b bfd25e8c d0364141 |
 | h        | 1                                                            |
 
-Each time a transaction is sent on behalf of an account, the user must sign it using the [ECDSA] algorithm (https://ru.wikipedia.org/wiki/ECDSA) with one of three private keys, which corresponds to the main, active or regular public key. A communicative key cannot be used to send transactions. It is used to encrypt messages, for example, in a token transfer note. When signing, it should be borne in mind that each key has its own access level, that is, different keys are responsible for different types of transactions.
+Each time a transaction is sent on behalf of an account, the user must sign it using the [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) algorithm with one of three private keys, which corresponds to the main, active or regular public key. A communicative key cannot be used to send transactions. It is used to encrypt messages, for example, in a token transfer note. When signing, it should be borne in mind that each key has its own access level, that is, different keys are responsible for different types of transactions.
 
 *The table below describes all the keys and operations that can be performed with their help*
 

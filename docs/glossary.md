@@ -4,7 +4,7 @@
 
 Decentralized autonomous organization in which each shareholder is a leader. In the real world, a DAO can be compared to a joint-stock company, but the DAO is decentralized and has no person in charge of preserving the assets of investors.
 
-[Wikipedia [en]](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), [Bitcoinwiki [ru]](https://ru.bitcoinwiki.org/wiki/DAO)
+[Wikipedia](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), [Bitcoinwiki](https://en.bitcoinwiki.org/wiki/The_DAO)
 
 ## Fair DPoS
 
@@ -42,7 +42,7 @@ Equity tokens (shares) give their owner the right to choose delegates, vote in t
 
 A community, which in its structure is similar to a living organism, in which the participants themselves decide what will be useful for it.
 
-[reinventingorganizationswiki [en]](http://reinventingorganizationswiki.com/Main_Page), [Wikipedia [ru]](http://ru.wiki-protopia.org/w/Turquoise_organization)
+[reinventingorganizationswiki](http://reinventingorganizationswiki.com/Main_Page)
 
 ## Delegates
 
