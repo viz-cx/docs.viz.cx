@@ -22,7 +22,7 @@ Shares cannot freely move from account to account, which means they cannot be tr
 
 ## Convert tokens
 
-Liquid tokens can be instantly exchanged for shares, but converting back will take 28 days (see [Shares-reduction]). In this case, the conversion ratio in one direction and the other is 1: 1 (1 shares for 1 viz and vice versa).
+Liquid tokens can be instantly exchanged for shares, but converting back will take 28 days (see [Shares reduction](#shares-reduction)). In this case, the conversion ratio in one direction and the other is 1: 1 (1 shares for 1 viz and vice versa).
 
 ## Decrease in share
 
@@ -44,15 +44,15 @@ To ensure the stable operation of the network, the blockchain distributes emissi
 
 To calculate how many tokens are issued with each new block, you can use the following formula:
 
-,,, Q = S * 10% / N,,,
+```Q = S * 10% / N```
 
-where `` Q '' is the number of tokens that will be issued, `` S '' is the total number of all VIZ tokens that are in the system (including shares in terms of VIZ) at the time of the start of the annual emission, `` N '' is the number of generated blocks per year.
+where ``Q`` is the number of tokens that will be issued, ``S`` is the total number of all VIZ tokens that are in the system (including shares in terms of VIZ) at the time of the start of the annual emission, ``N`` is the number of generated blocks per year.
 
-You can calculate `` N '' using the following formula:
+You can calculate ``N`` using the following formula:
 
-`` N = 365 * 24 * 60 * 60 / v``,
+``N = 365 * 24 * 60 * 60 / v``,
 
-where `` v '' is the rate of generation of new blocks, equal to 3 seconds, and `` 365 * 24 * 60 * 60 '' is the number of seconds in one year (in VIZ, one year is equal to 365 days)
+where ``v`` is the rate of generation of new blocks, equal to 3 seconds, and ``365 * 24 * 60 * 60`` is the number of seconds in one year (in VIZ, one year is equal to 365 days)
 
 The issued tokens are distributed in several directions:
 
@@ -98,9 +98,9 @@ The rewarding account can specify as beneficiaries, for example, the people who 
 
 Rewarding shares (rshares) are the number of shares a particular participant has designated to participate in the competition pool. The number of rshares depends on the effective shares of the rewarding participant and the energy that he is willing to spend on the reward. Rshares are calculated using the following formula:
 
-`` rshares = S * E% ``
+``rshares = S * E%``
 
-where `` S '' is the number of effective shares of the participant, `` E% '' is the amount of energy in percentage that he is willing to spend on the reward.
+where ``S`` is the number of effective shares of the participant, ``E%`` is the amount of energy in percentage that he is willing to spend on the reward.
 
 ### Competition pool
 
@@ -126,6 +126,6 @@ An application is considered accepted if, after the specified period, it receive
 
 The formula for calculating the total amount of payments after the expiration of the voting period:
 
-,,, SUM (Wn * Pn) / SUM (Wn) * M ,,,
+```SUM(Wn * Pn) / SUM(Wn) * M```,
 
-where `` SUM '' is a function of the mathematical sum, `` Wn '' is the number of shares of participant `` n '', `` Pn '' is the percentage set by participant `` n '', `` M '' is the maximum the amount of [liquid tokens](#viz-token) specified by the creator of the application.
+where ``SUM`` is a function of the mathematical sum, ``Wn`` is the number of shares of participant ``n``, ``Pn`` is the percentage set by participant ``n``, ``M`` is the maximum the amount of [liquid tokens](#viz-token) specified by the creator of the application.
