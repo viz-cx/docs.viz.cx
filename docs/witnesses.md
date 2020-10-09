@@ -66,6 +66,7 @@ Detailed description of voted parameters
 
 Below is a table of the types that the blockchain uses:
 
+<div id="format-table"></div>
 | Type         | Example           | Range                | Description                                                   |
 | ------------ | ----------------- | -------------------- | ------------------------------------------------------------ |
 | VIZ asset    | "1.000 VIZ"       | from 0.001 VIZ | The number of liquid tokens. A string with a decimal number with no more than 3 digits after a period and an obligatory postscript VIZ separated by a space. <br /> Example: "1.123 VIZ" |

@@ -10,7 +10,7 @@ VIZ consists of two main technical components: a basic consensus based on [Fair 
 
 ## How VIZ differs from Ethereum, Bitcoin and other similar projects
 
-Unlike many crypto projects like Ethereum or Bitcoin, which use PoW or PoS algorithms, VIZ uses a more democratic algorithm [Fair DPoS](./glossary.md#fair-dpos). This means that the main role in the network is played not by miners, but by investors who vote for the creators of new blocks - delegates. Delegates guarantee the stable operation of the blockchain and receive payments from the issue for this. However, the voting system is designed so that the owners of the [larger share](./glossary.md#shares) of the network have more weight. In addition, only 21 [delegates](./glossary#witnesses) (ten with the most votes and eleven of the others) are allowed to create new blocks and manage network parameters.
+Unlike many crypto projects like Ethereum or Bitcoin, which use PoW or PoS algorithms, VIZ uses a more democratic algorithm [Fair DPoS](./glossary.md#fair-dpos). This means that the main role in the network is played not by miners, but by investors who vote for the creators of new blocks - delegates. Delegates guarantee the stable operation of the blockchain and receive payments from the issue for this. However, the voting system is designed so that the owners of the [larger share](./glossary.md#share-token) of the network have more weight. In addition, only 21 [delegates](./glossary#witnesses) (ten with the most votes and eleven of the others) are allowed to create new blocks and manage network parameters.
 
 ## How VIZ differs from BitShares
 
