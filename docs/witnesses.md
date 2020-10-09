@@ -1,34 +1,34 @@
-# Delegates
+# Witnesses
 
-Delegates are participants whom other members of the VIZ DAO have entrusted with maintaining the blockchain: creating and signing blocks, managing economic and other parameters, as well as updating the blockchain code. Confidence in a delegate is expressed in the number of votes cast for him. In this case, one token shares is accepted for one vote. That is, the larger the share of the account in the DAO, the higher its influence on the election of delegates.
+Witnesses are participants whom other members of the VIZ DAO have entrusted with maintaining the blockchain: creating and signing blocks, managing economic and other parameters, as well as updating the blockchain code. Confidence in a delegate is expressed in the number of votes cast for him. In this case, one token shares is accepted for one vote. That is, the larger the share of the account in the DAO, the higher its influence on the election of witnesses.
 
-Delegates' activities are divided into rounds. In one round, 21 blocks are created with an interval of 3 seconds, so the duration of one round is 63 seconds. No more than 21 delegates can take part in one round, who, in turn, create and sign new blocks. For each block created, the delegate receives a reward in accordance with the emission model.
+Witnesses' activities are divided into rounds. In one round, 21 blocks are created with an interval of 3 seconds, so the duration of one round is 63 seconds. No more than 21 witnesses can take part in one round, who, in turn, create and sign new blocks. For each block created, the delegate receives a reward in accordance with the emission model.
 
-One round includes 11 top delegates (who got the most votes and only change if someone gets more votes) and 10 support delegates who are automatically selected from all other delegates.
+One round includes 11 top witnesses (who got the most votes and only change if someone gets more votes) and 10 support witnesses who are automatically selected from all other witnesses.
 
-All delegates who have not entered the current round must wait for a new round to take the position of the previous support delegate. In this case, the waiting time depends on the number of votes collected by the delegate.
+All witnesses who have not entered the current round must wait for a new round to take the position of the previous support delegate. In this case, the waiting time depends on the number of votes collected by the delegate.
 
 ## Penalty and exclusion of the delegate from the chain
 
-If a delegate misses a block, he is assigned a penalty (penalty), which is expressed in a temporary decrease in the number of votes by [percentage determined by delegates](#witness_miss_penalty_percent) (default is 1%), and which will be extinguished after some time, which also [ set by delegates](#witness_miss_penalty_duration) (default 24 hours).
+If a delegate misses a block, he is assigned a penalty (penalty), which is expressed in a temporary decrease in the number of votes by [percentage determined by witnesses](#witness_miss_penalty_percent) (default is 1%), and which will be extinguished after some time, which also [ set by witnesses](#witness_miss_penalty_duration) (default 24 hours).
 
 If, as a result, the delegate has 0 votes, that is, the total percentage of the penalty will be equal to 100%, then the delegate will be excluded from the chain until all penalties have been paid.
 
 In addition, another option for excluding a delegate from the chain is possible: if the delegate skips more than 200 blocks in a row, then he will be excluded from the chain until he manually fixes the problem and until all penalties earned for missing these two hundred blocks expire ...
 
-## Voting for delegates
+## Voting for witnesses
 
-There are two ways to vote for delegates:
+There are two ways to vote for witnesses:
 
 Direct voting. With this method of voting, the participant independently decides for which delegate to vote. When voting, the number of net shares is taken into account.
 
-Proxy voting. With this method of voting, the participant chooses a proxy account, which will decide which of the delegates to vote the votes given to him. In turn, a proxy account can entrust its user's votes to another proxy account. When voting through a proxy account, only the number of net shares is taken into account.
+Proxy voting. With this method of voting, the participant chooses a proxy account, which will decide which of the witnesses to vote the votes given to him. In turn, a proxy account can entrust its user's votes to another proxy account. When voting through a proxy account, only the number of net shares is taken into account.
 
-You can vote for a maximum of 100 delegates at the same time, while the power of the vote is distributed equally among all of them (this is called Fair DPOS). That is, if a participant voted for 4 delegates, then each will get 25% of the account's votes.
+You can vote for a maximum of 100 witnesses at the same time, while the power of the vote is distributed equally among all of them (this is called Fair DPOS). That is, if a participant voted for 4 witnesses, then each will get 25% of the account's votes.
 
 ## Manage network parameters
 
-The role of delegates is to keep the network up and running, accept software updates, and manage blockchain parameters. Delegates can control the following parameters:
+The role of witnesses is to keep the network up and running, accept software updates, and manage blockchain parameters. Witnesses can control the following parameters:
 
 [account_creation_fee](#account-creation-fee) - the minimum cost of creating a new account in liquid tokens;
 
@@ -48,7 +48,7 @@ The role of delegates is to keep the network up and running, accept software upd
 
 [committee_request_approve_min_percent](#vote-accounting-min-rshares) - the minimum percentage of all votes cast for an application in the Committee, at which it is considered confirmed;
 
-[inflation_witness_percent](#inflation-witness-percent) - the percentage of the emission, which is distributed among the 21 delegates who entered the block signature round;
+[inflation_witness_percent](#inflation-witness-percent) - the percentage of the emission, which is distributed among the 21 witnesses who entered the block signature round;
 
 [inflation_ratio_committee_vs_reward_fund](#inflation-ratio-committee-vs-reward-fund) - the percentage of the remaining emission going to the Committee;
 
@@ -60,7 +60,7 @@ The role of delegates is to keep the network up and running, accept software upd
 
 [witness_miss_penalty_duration](#witness_miss_penalty_duration) - the number of seconds after which the delegate returns the number of votes to [witness_miss_penalty_percent](#witness_miss_penalty_percent) percent, if they were reduced due to missing blocks.
 
-The blockchain software update requires the consent of 17 delegates per round. The values ​​of the parameters to be voted are equal to the median of the values ​​set by the 21 delegates in the round.
+The blockchain software update requires the consent of 17 witnesses per round. The values ​​of the parameters to be voted are equal to the median of the values ​​set by the 21 witnesses in the round.
 
 Detailed description of voted parameters
 
@@ -107,7 +107,7 @@ Added: 1.0.0
 
 [Format](#format-table): Integer
 
-Each block can contain a limited amount of information in bytes. By voting on this option, delegates can address network scalability issues.
+Each block can contain a limited amount of information in bytes. By voting on this option, witnesses can address network scalability issues.
 
 ### min_delegation
 
@@ -163,7 +163,7 @@ Added: 2.0.0
 
 [Format](#format-table): Percentage
 
-Percentage of the issue, which is distributed among the 21 delegates who entered the block signature round.
+Percentage of the issue, which is distributed among the 21 witnesses who entered the block signature round.
 
 ### bandwidth_reserve_below
 
@@ -211,4 +211,4 @@ Added: 2.0.0
 
 [Format](#format-table): Percentage
 
-Percentage of the issue, which is distributed among the 21 delegates who entered the block signature round.
+Percentage of the issue, which is distributed among the 21 witnesses who entered the block signature round.

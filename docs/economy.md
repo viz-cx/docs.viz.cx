@@ -16,7 +16,7 @@ Liquid token (viz) are blockchain tokens that the owner can freely move between 
 
 ## Shared token shares
 
-Equity tokens (shares) give their owner the right to elect delegates, vote in the Committee and distribute [emission](#emission) among VIZ members. The influence of their holder on the processes in the DAO depends on the number of share tokens: the more shares, the higher the influence.
+Equity tokens (shares) give their owner the right to elect witnesses, vote in the Committee and distribute [emission](#emission) among VIZ members. The influence of their holder on the processes in the DAO depends on the number of share tokens: the more shares, the higher the influence.
 
 Shares cannot freely move from account to account, which means they cannot be traded on the exchange. However, one participant can delegate them (transfer part of their powers, "give to use") to another participant. When the second participant receives the funds delegated by the first participant, he will increase his influence by exactly the delegated number of shares, and the first will decrease his influence. At the same time, the shares received by delegation cannot be transferred to liquid viz. Delegated shares can be revoked at any time, they will be returned to the owner's account in a day.
 
@@ -30,7 +30,7 @@ The transfer from shares to viz is called “downgrading” and takes 28 days fo
 
 ## Net shares
 
-Net shares are the number of share tokens in the account, excluding those transferred and received by delegation. That is, these are shares that the participant actually owns, which can be exchanged for viz. When voting for delegates, only net equity tokens are counted.
+Net shares are the number of share tokens in the account, excluding those transferred and received by delegation. That is, these are shares that the participant actually owns, which can be exchanged for viz. When voting for witnesses, only net equity tokens are counted.
 
 ## Effective shares
 
@@ -38,7 +38,7 @@ Effective shares are the number of net equity tokens plus those received by dele
 
 ## Emission
 
-To ensure payment for useful actions on the network, the blockchain has an emission mechanism. The emission rate is set in the blockchain code and can only be changed by delegates through the adoption of a code update (i.e. through a hard fork). At the start of the blockchain, the emission rate is set at 10% per year. Moreover, the absolute amount of the issue is recalculated once a year.
+To ensure payment for useful actions on the network, the blockchain has an emission mechanism. The emission rate is set in the blockchain code and can only be changed by witnesses through the adoption of a code update (i.e. through a hard fork). At the start of the blockchain, the emission rate is set at 10% per year. Moreover, the absolute amount of the issue is recalculated once a year.
 
 To ensure the stable operation of the network, the blockchain distributes emission with each new block, approximately every 3 seconds.
 
@@ -58,9 +58,9 @@ The issued tokens are distributed in several directions:
 
 - Fund [awards](#awards) - 40% of the issue per year;
 - Fund [committee](#committee) - 40% of the issue per year;
-- Award [to delegates](./witnesses.md) - 20% of the issue per year.
+- Award [to witnesses](./witnesses.md) - 20% of the issue per year.
 
-This distribution of emissions is [set by delegates](./witnesses.md ## inflation-witness-percent) and is subject to change. No consensus is required for this, percentages are defined as the median value of the parameters set by delegates, which is updated periodically.
+This distribution of emissions is [set by witnesses](./witnesses.md ## inflation-witness-percent) and is subject to change. No consensus is required for this, percentages are defined as the median value of the parameters set by witnesses, which is updated periodically.
 
 ## Account Rewards and Energy
 
@@ -122,7 +122,7 @@ In addition, in the application, in addition to the creator's account, the recip
 
 During the time specified in the application, community members vote for or against the application, or may abstain from voting. The community member voter specifies the percentage of the maximum bid amount that he considers acceptable. This percentage can range from -100% to 100%. The voting takes into account the number of [effective-shares] of the voter. This means that accounts with higher weight have a greater impact on the outcome of the application than accounts with lower weight.
 
-An application is considered accepted if, after the specified period, it receives at least 10% ([set by delegates](./witnesses.md# committee-request-approve-min-percent)) from all possible votes, that is, from all shares in system (both votes for and against are taken into account). The blockchain then calculates the weighted average interest per request and the amount due. If the amount is greater than or equal to the minimum application amount, the application will be approved and the recipient will be paid the approved amount. Otherwise, the application will be rejected. Also, the application can be canceled by the creator himself if he changes his mind.
+An application is considered accepted if, after the specified period, it receives at least 10% ([set by witnesses](./witnesses.md# committee-request-approve-min-percent)) from all possible votes, that is, from all shares in system (both votes for and against are taken into account). The blockchain then calculates the weighted average interest per request and the amount due. If the amount is greater than or equal to the minimum application amount, the application will be approved and the recipient will be paid the approved amount. Otherwise, the application will be rejected. Also, the application can be canceled by the creator himself if he changes his mind.
 
 The formula for calculating the total amount of payments after the expiration of the voting period:
 

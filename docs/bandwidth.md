@@ -39,17 +39,17 @@ Before reading further, take a look at the legend table below.
 | N                    | byte              | New transaction size                                      |
 | W                    | seconds           | Number of seconds in a week                                   |
 | T                    | seconds           | Difference between the time when the last transaction was sent and at the moment |
-| R                    | percentage (%)    | The percentage of allocated bandwidth for accounts with low network share. This parameter is set by delegates |
+| R                    | percentage (%)    | The percentage of allocated bandwidth for accounts with low network share. This parameter is set by witnesses |
 | C                    | integer           | The number of active accounts (sent at least one transaction in 30 days) with a small share of the network |
 | Smax                 | Shares            | Share volume of a specific account                              |
 | S                    | Shares            | The volume of the share of a particular account, taking into account the percentage allocated for accounts with a small share of the network |
 | M                    | Shares            | Share of all accounts                                    |
-| G                    | byte              | The maximum block size. This parameter is set by delegates |
+| G                    | byte              | The maximum block size. This parameter is set by witnesses |
 | K                    | integer           | Bandwidth redundancy ratio from 1 to 2000 |
 | L                    | integer           | The number of blocks to be generated per week     |
 | E                    | byte              | ``G * L * K`` – maximum throughput at a given load |
 
-** Note: the value of R is set by delegates, they also determine how much of a share is considered small. In addition, delegates can prohibit members with a small stake from making transactions. **
+** Note: the value of R is set by witnesses, they also determine how much of a share is considered small. In addition, witnesses can prohibit members with a small stake from making transactions. **
 
 For each specific account, the bandwidth limit is set to `` (S / M) * E '', that is, in proportion to its share in the network. Moreover, `` S = Smax * (100% - R) '', if `` Smax '' is considered normal, and `` S = M * R / C '' for accounts with a small share. This means that some of the bandwidth is taken away from accounts with sufficient stack and distributed among accounts with a small share in the network. If `` Bnew '' exceeds the reserved value, then the account will not be able to send a new transaction. In turn, Bnew is calculated using the following formula:
 
@@ -63,7 +63,7 @@ It follows from the formula that the more time has passed since the last transac
 
 Many transactions in VIZ are limited in the amount of information that can be accommodated in them. For example, when sending a transfer, you can specify only the number of tokens and a note, the size of which should not exceed 2 KB. But there is another type of transaction, for example, a custom transaction, in which basic information can be recorded by its sender in free form. The size of the data in such transactions is almost unlimited.
 
-For such unlimited transactions, the system can make a markup for a certain multiplier `` X '' ([it all depends on the decision of delegates](./witnesses.md#data_operations_cost_additional_bandwidth)), then the formula for `` Bnew '' will look like this:
+For such unlimited transactions, the system can make a markup for a certain multiplier `` X '' ([it all depends on the decision of witnesses](./witnesses.md#data_operations_cost_additional_bandwidth)), then the formula for `` Bnew '' will look like this:
 
 `` Bnew = MAX (0, (W - T) * Bold / W) + N * X``
 
@@ -81,4 +81,4 @@ The formula for calculating the new moving average value for the block size:
 | Aold                 | byte              | The last moving average value for the block size        |
 | Q                    | byte              | New block size                                          |
 
-**Note: If the reservation ratio consistently falls below 100, then delegates should consider increasing the network bandwidth, for example, increasing the maximum block size.**
+**Note: If the reservation ratio consistently falls below 100, then witnesses should consider increasing the network bandwidth, for example, increasing the maximum block size.**

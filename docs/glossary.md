@@ -8,15 +8,15 @@ Decentralized autonomous organization in which each shareholder is a leader. In 
 
 ## Fair DPoS
 
-Fair DPoS is a subset of DPoS algorithms in which the power of a voter's vote is distributed equally among all the delegates he voted for. That is, if a participant voted for 4 delegates, then each will get 25% of the strength of his vote.
+Fair DPoS is a subset of DPoS algorithms in which the power of a voter's vote is distributed equally among all the witnesses he voted for. That is, if a participant voted for 4 witnesses, then each will get 25% of the strength of his vote.
 
 [More](./witnesses.md)
 
 ## DPoS
 
-DPoS (Delegated proof-of-stake) is a consensus-building algorithm in a decentralized environment in which the voting participants (usually coin holders in the system) choose the participants who will form the blocks (delegates). Thus, voters may not keep special equipment to support the operation of the network and manage its parameters, but elect delegates whom they trust.
+DPoS (Delegated proof-of-stake) is a consensus-building algorithm in a decentralized environment in which the voting participants (usually coin holders in the system) choose the participants who will form the blocks (witnesses). Thus, voters may not keep special equipment to support the operation of the network and manage its parameters, but elect witnesses whom they trust.
 
-The peculiarity of DPoS is that the network works only due to the trust of voters in the delegates, in contrast to PoW or PoS, in which any user who has installed special equipment can form blocks (and therefore support the operation of the network).
+The peculiarity of DPoS is that the network works only due to the trust of voters in the witnesses, in contrast to PoW or PoS, in which any user who has installed special equipment can form blocks (and therefore support the operation of the network).
 
 Voting takes place in such a way that the owner of a larger stake in the network (more coins) has a greater influence on the outcome of the election. In other words, the voter votes with his coins.
 
@@ -34,7 +34,7 @@ Liquid tokens (viz) are blockchain tokens that the owner can freely move between
 
 ## Share Token
 
-Equity tokens (shares) give their owner the right to choose delegates, vote in the Committee and distribute the issue among VIZ members. The influence of their holder on the processes in the DAO depends on the number of share tokens: the more shares, the higher the influence.
+Equity tokens (shares) give their owner the right to choose witnesses, vote in the Committee and distribute the issue among VIZ members. The influence of their holder on the processes in the DAO depends on the number of share tokens: the more shares, the higher the influence.
 
 [More](./economy.md#shares)
 
@@ -44,7 +44,7 @@ A community, which in its structure is similar to a living organism, in which th
 
 [reinventingorganizationswiki](http://reinventingorganizationswiki.com/Main_Page)
 
-## Delegates
+## Witnesses
 
 These are the network members to whom the DAO VIZ members entrusted its support: the creation and signing of blocks, the management of economic and other parameters, including the adoption of hard forks.
 

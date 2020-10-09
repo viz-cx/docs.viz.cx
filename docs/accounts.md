@@ -34,7 +34,7 @@ Each time a transaction is sent on behalf of an account, the user must sign it u
 | Key                       | Permissions                                                   |
 | ------------------------- | ------------------------------------------------------------ |
 | Regular                   | Sending [custom-transactions](./glossary.md#custom-transaction), rewarding users, changing account metadata, any actions with [committee.](./economy.md#committee) |
-| Active                    | Everything that can be done using a regular key, as well as operations with [assets](./economy.md#assets) and voting for [delegates](./witnesses.md). |
+| Active                    | Everything that can be done using a regular key, as well as operations with [assets](./economy.md#assets) and voting for [witnesses](./witnesses.md). |
 | Master                    | Everything that can be done with regular and active keys, as well as replacement of all keys. |
 | Memo                      | Does not allow signing transactions, but it can be used to classify messages, for example, encrypt using the [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) algorithm when transferring tokens |
 
@@ -69,7 +69,7 @@ To create a new account in VIZ, you need to send a special transaction (account_
 
 Instead of keys, you can link existing accounts to roles of the same name. True, in the latter case, you still have to prescribe a communicative key, since there is no role for it.
 
-The sender of the transaction must pay for the creation of an account an amount not less than [indicated by the delegates](./witnesses.md#account-creation-fee). All liquid tokens that the registrar pays will be converted into shares of the new account.
+The sender of the transaction must pay for the creation of an account an amount not less than [indicated by the witnesses](./witnesses.md#account-creation-fee). All liquid tokens that the registrar pays will be converted into shares of the new account.
 
 In addition to the direct transfer of liquid tokens, there are two more ways to create an account: registration through delegation of a share and creation through an invite code.
 
@@ -77,13 +77,13 @@ In addition to the direct transfer of liquid tokens, there are two more ways to 
 
 In order not to spend liquid tokens, the registrar can create a new account [by delegation](./economy.md#shares). To do this, he must also send a transaction, but indicate in it not the number of liquid tokens that he is ready to spend (transfer to the share of the new account), but the number of share tokens that he is ready to delegate to the new account.
 
-The value of all delegated shares in viz must be no less than [indicated by delegates](./accounts.md#create-account-delegation-ratio).
+The value of all delegated shares in viz must be no less than [indicated by witnesses](./accounts.md#create-account-delegation-ratio).
 
 Along with delegation, the registrar can spend liquid tokens, they will also be converted into shares of the new account, but the transaction price will not be affected, the account will be created either for viz or for shares.
 
 If the number of translated viz is enough for registration for liquid tokens, then the account will be created for viz, if not enough, then for delegated shares. If the number of delegated shares is also insufficient, the account will not be created.
 
-The registrar will be able to revoke delegated tokens by default after 28 days or after another period specified by the delegates(./witnesses.md#create-account-delegation-time).
+The registrar will be able to revoke delegated tokens by default after 28 days or after another period specified by the witnesses(./witnesses.md#create-account-delegation-time).
 
 If the registrar tries to revoke shares earlier than the specified period, they will be debited from the new account, but will be frozen until 28 days have passed since the registration. In case of freezing, neither the registrar nor the created account can use the share tokens.
 
@@ -91,7 +91,7 @@ If the registrar tries to revoke shares earlier than the specified period, they 
 
 * Read more about checks in the section: [Bearer Checks](./check.md). *
 
-Another convenient way to create a new account is to pay for registration using a check. For this, a future VIZ participant must purchase (buy or receive as a gift) a VIZ check for an amount not less than [indicated by the delegates](./witnesses.md#account-creation-fee) as a fee for creating an account.
+Another convenient way to create a new account is to pay for registration using a check. For this, a future VIZ participant must purchase (buy or receive as a gift) a VIZ check for an amount not less than [indicated by the witnesses](./witnesses.md#account-creation-fee) as a fee for creating an account.
 
 The owner of the check, using the application or directly sends a special transaction (invite_registration) to the blockchain, indicating the private key of the check and the public future master key of the account. This transaction will register a new account by spending tokens from the check. All tokens from the check will be converted into shares of the new account.
 
@@ -99,7 +99,7 @@ If a person already has an account, then he can sign the transaction using his a
 
 ## Anonymous accounts
 
-To create anonymous accounts, a special @anonymous account was built into the blockchain. To register an account, it is necessary to transfer to it viz tokens with a volume of no less than [indicated by the delegates](./witnesses.md#account_creation_fee), attach a note with the name of the new account and its public key to the transfer (the private key must be kept in a safe place and no one do not transmit). The note must match the format
+To create anonymous accounts, a special @anonymous account was built into the blockchain. To register an account, it is necessary to transfer to it viz tokens with a volume of no less than [indicated by the witnesses](./witnesses.md#account_creation_fee), attach a note with the name of the new account and its public key to the transfer (the private key must be kept in a safe place and no one do not transmit). The note must match the format
 
 `` login: key``,
 
@@ -113,9 +113,9 @@ Anonymous accounts have the same rights as other accounts. And with popular gate
 
 Each account on the blockchain has a supply of energy, which is measured as a percentage. The maximum energy value is 100%, the minimum can be -100%, that is, less than 0%.
 
-Energy is needed to send [awards](./economy.md#awards) to other users. If there is not enough energy, then the account will not be able to reward the participant with the required amount of tokens, and if the energy is equal to or less than 0%, then the account will not be able to send the reward at all. However, he will still be able to perform other operations on the blockchain, for example, transfer tokens between accounts, vote for delegates and do whatever he can with 100% energy. Read more about the awards in the [Activity awards] section (./ecomomy.md#award).
+Energy is needed to send [awards](./economy.md#awards) to other users. If there is not enough energy, then the account will not be able to reward the participant with the required amount of tokens, and if the energy is equal to or less than 0%, then the account will not be able to send the reward at all. However, he will still be able to perform other operations on the blockchain, for example, transfer tokens between accounts, vote for witnesses and do whatever he can with 100% energy. Read more about the awards in the [Activity awards] section (./ecomomy.md#award).
 
-Energy is wasted in two cases. First, when the account rewards the participant. In this case, the user himself indicates how much energy he wants to spend, and the size of the reward depends on this amount. Second, when the account [delegates shares](./economy.md#shares) to another user.
+Energy is wasted in two cases. First, when the account rewards the participant. In this case, the user himself indicates how much energy he wants to spend, and the size of the reward depends on this amount. Second, when the account [witnesses shares](./economy.md#shares) to another user.
 
 Delegation occurs in two cases: when registering an account through delegation and when delegating a share to an existing account. With any delegation option, the initiator cannot specify the amount of energy that will be spent, but it is directly proportional to the number of shares that will be sent (the more shares are delegated, the more energy will be spent).
 
@@ -277,7 +277,7 @@ Added: 1.0.0
 
 [Format](#props-desc-table): Percentage
 
-The amount of energy that the account has left since the last transaction was sent. This parameter will update when the user submits a new transaction. The time it took to restore it will also be taken into account. The parameter is updated in such a way so as not to waste delegates' resources on unnecessary calculations.
+The amount of energy that the account has left since the last transaction was sent. This parameter will update when the user submits a new transaction. The time it took to restore it will also be taken into account. The parameter is updated in such a way so as not to waste witnesses' resources on unnecessary calculations.
 
 ### id
 
@@ -357,7 +357,7 @@ Added: 1.0.0
 
 [Format](#props-desc-table): Array of accounts
 
-List of delegates voted for by the user.
+List of witnesses voted for by the user.
 
 ### witnesses_voted_for
 
@@ -365,7 +365,7 @@ Added: 1.0.0
 
 [Format](#props-desc-table): µShares
 
-The number of delegates that the account has voted for.
+The number of witnesses that the account has voted for.
 
 ### witnesses_vote_weight
 
