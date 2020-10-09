@@ -4,11 +4,11 @@
 
 Throughput is the maximum size of a transaction in bytes that
 the user can send to the blockchain at a given time. Throughput volume
-the ability depends on the number of [Shares](./economy.md#shares) in the user's account.
+the ability depends on the number of [Shares](./economy.md#effective-shares) in the user's account.
 
 ## Description
 
-Most blockchain projects force users to pay for each transaction in order to limit spam and make it economically unprofitable. But VIZ doesn't force users to pay, it uses a [dynamic-reserve] system. With this model, the blockchain automatically selects the reservation ratio for different loads. Every time there is a spike in activity, the blockchain dramatically lowers the bandwidth of each account. When the spike is over and there is more space in the bandwidth, the blockchain slowly increases the bandwidth of each user.
+Most blockchain projects force users to pay for each transaction in order to limit spam and make it economically unprofitable. But VIZ doesn't force users to pay, it uses a [dynamic-reserve](#what-is-the-difference-between-partial-and-full-reservation) system. With this model, the blockchain automatically selects the reservation ratio for different loads. Every time there is a spike in activity, the blockchain dramatically lowers the bandwidth of each account. When the spike is over and there is more space in the bandwidth, the blockchain slowly increases the bandwidth of each user.
 
 Every time a user signs a transaction, it counts towards their moving average throughput. If the sliding has crossed the limit, then the blockchain will not allow sending this transaction. In this case, the transaction should be postponed until the moving average drops below the threshold.
 

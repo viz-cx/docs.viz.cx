@@ -32,7 +32,7 @@
 * [viz.dpos.space](https://viz.dpos.space) ([исходники](https://github.com/denis-skripnik/dpos.space))
 
 ## Полезные инструменты
-* [control.viz.world/tools] (https://control.viz.world/tools/)
+* [control.viz.world/tools](https://control.viz.world/tools/)
 * [api.dpos.space/viz](http://api.dpos.space/viz/)
 * [dpos.space/viz](https://dpos.space/viz) ([исходники](https://github.com/denis-skripnik/dpos.space))
 

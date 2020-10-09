@@ -83,7 +83,7 @@ Along with delegation, the registrar can spend liquid tokens, they will also be 
 
 If the number of translated viz is enough for registration for liquid tokens, then the account will be created for viz, if not enough, then for delegated shares. If the number of delegated shares is also insufficient, the account will not be created.
 
-The registrar will be able to revoke delegated tokens by default after 28 days or after another period specified by the witnesses(./witnesses.md#create-account-delegation-time).
+The registrar will be able to revoke delegated tokens by default after 28 days or after another period [specified by the witnesses](./witnesses.md#create-account-delegation-time).
 
 If the registrar tries to revoke shares earlier than the specified period, they will be debited from the new account, but will be frozen until 28 days have passed since the registration. In case of freezing, neither the registrar nor the created account can use the share tokens.
 
@@ -113,7 +113,7 @@ Anonymous accounts have the same rights as other accounts. And with popular gate
 
 Each account on the blockchain has a supply of energy, which is measured as a percentage. The maximum energy value is 100%, the minimum can be -100%, that is, less than 0%.
 
-Energy is needed to send [awards](./economy.md#awards) to other users. If there is not enough energy, then the account will not be able to reward the participant with the required amount of tokens, and if the energy is equal to or less than 0%, then the account will not be able to send the reward at all. However, he will still be able to perform other operations on the blockchain, for example, transfer tokens between accounts, vote for witnesses and do whatever he can with 100% energy. Read more about the awards in the [Activity awards] section (./ecomomy.md#award).
+Energy is needed to send [awards](./economy.md#awards) to other users. If there is not enough energy, then the account will not be able to reward the participant with the required amount of tokens, and if the energy is equal to or less than 0%, then the account will not be able to send the reward at all. However, he will still be able to perform other operations on the blockchain, for example, transfer tokens between accounts, vote for witnesses and do whatever he can with 100% energy. Read more about the awards in the section [Activity awards](./economy.md#awards).
 
 Energy is wasted in two cases. First, when the account rewards the participant. In this case, the user himself indicates how much energy he wants to spend, and the size of the reward depends on this amount. Second, when the account [witnesses shares](./economy.md#shares) to another user.
 
@@ -130,6 +130,7 @@ This section describes the parameters that accounts contain in the form in which
 To get started, check out the table of information types that blockchain uses:
 
 <div id="props-desc-table"></div>
+
 | Type         | Example               | Range                | Description                                                     |
 | ------------ | --------------------- | -------------------- | ------------------------------------------------------------ |
 | VIZ asset    | "1.000 VIZ"           | from 0.001 VIZ       | Number of [liquid tokens](./economy.md#viz-token). A string with a decimal number with no more than 3 digits after a period and a mandatory VIZ postscript separated by a space. <br> Example: "1.123 VIZ" |

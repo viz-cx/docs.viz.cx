@@ -86,7 +86,7 @@ The blockchain multiplies this data and gets a notional value, which is [called 
 
 *Example.*
 
-* Alice has 10,000 effective shares. She rewards Bob with 15% energy. Accordingly, the rshares of this award = `` 10000 * 0.15 = 1500 ''.
+* Alice has 10,000 effective shares. She rewards Bob with 15% energy. Accordingly, the rshares of this award = ``10000 * 0.15 = 1500``.
 
 * The reward pool is 27397 viz. Over the past 5 days, the participants awarded other participants a total of 4379876 rshares (taking into account this award to Alice Bobu). Divide 1500 by 4379876 and multiply by 27397. We get 9.382800 viz - this will be Bob's reward, which is credited to his share (in the form of shares). *
 
@@ -120,7 +120,7 @@ In addition to filling out the formal parameters of the application, the partici
 
 In addition, in the application, in addition to the creator's account, the recipient's account is registered. The recipient can be either the creator himself or a trusted person who has great authority on the platform. In other words, you can create an application with the receipt of funds through an intermediary (guarantor). The intermediary can, for example, guarantee that he will burn (or transfer to the committee's fund) all or part of the received tokens if the contractor does not fulfill any conditions.
 
-During the time specified in the application, community members vote for or against the application, or may abstain from voting. The community member voter specifies the percentage of the maximum bid amount that he considers acceptable. This percentage can range from -100% to 100%. The voting takes into account the number of [effective-shares] of the voter. This means that accounts with higher weight have a greater impact on the outcome of the application than accounts with lower weight.
+During the time specified in the application, community members vote for or against the application, or may abstain from voting. The community member voter specifies the percentage of the maximum bid amount that he considers acceptable. This percentage can range from -100% to 100%. The voting takes into account the number of [effective-shares](./economy.md#effective-shares) of the voter. This means that accounts with higher weight have a greater impact on the outcome of the application than accounts with lower weight.
 
 An application is considered accepted if, after the specified period, it receives at least 10% ([set by witnesses](./witnesses.md# committee-request-approve-min-percent)) from all possible votes, that is, from all shares in system (both votes for and against are taken into account). The blockchain then calculates the weighted average interest per request and the amount due. If the amount is greater than or equal to the minimum application amount, the application will be approved and the recipient will be paid the approved amount. Otherwise, the application will be rejected. Also, the application can be canceled by the creator himself if he changes his mind.
 
