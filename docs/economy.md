@@ -26,7 +26,7 @@ Liquid tokens can be instantly exchanged for shares, but converting back will ta
 
 ## Decrease in share
 
-The transfer from shares to viz is called “downgrading” and takes 28 days for the entire share. In one day, 1/28 of the total number of shares is exchanged. If a VIZ member wants to withdraw not all shares from the stake, the downgrade will be faster. For example, if there are 28000 shares in the share, and the participant wants to withdraw 1000 shares, the withdrawal will take place in 1 day.
+The transfer from shares to viz is called "downgrading" and takes 28 days for the entire share. In one day, 1/28 of the total number of shares is exchanged. If a VIZ member wants to withdraw not all shares from the stake, the downgrade will be faster. For example, if there are 28000 shares in the share, and the participant wants to withdraw 1000 shares, the withdrawal will take place in 1 day.
 
 ## Net shares
 

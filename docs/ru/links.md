@@ -27,7 +27,7 @@
 * **Bitshares**: [USDT](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.USDT) | [BTC](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.BTC) | [BTS](https://wallet.bitshares.org/#/market/XCHNG.VIZ_BTS) | [bitRUBLE](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUBLE)
 
 ## Информационные ресурсы
-* [control.viz.world/media](https://control.viz.world/media/tags/en/) ([исходники](https://github.com/VIZ-Blockchain/viz-php-control -панель))
+* [control.viz.world/media](https://control.viz.world/media/tags/en/) ([исходники](https://github.com/VIZ-Blockchain/viz-php-control-panel))
 * [viz.media](https://viz.media)
 * [viz.dpos.space](https://viz.dpos.space) ([исходники](https://github.com/denis-skripnik/dpos.space))
 
