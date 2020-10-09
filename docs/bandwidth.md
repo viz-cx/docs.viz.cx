@@ -63,17 +63,17 @@ It follows from the formula that the more time has passed since the last transac
 
 Many transactions in VIZ are limited in the amount of information that can be accommodated in them. For example, when sending a transfer, you can specify only the number of tokens and a note, the size of which should not exceed 2 KB. But there is another type of transaction, for example, a custom transaction, in which basic information can be recorded by its sender in free form. The size of the data in such transactions is almost unlimited.
 
-For such unlimited transactions, the system can make a markup for a certain multiplier `` X '' ([it all depends on the decision of witnesses](./witnesses.md#data_operations_cost_additional_bandwidth)), then the formula for `` Bnew '' will look like this:
+For such unlimited transactions, the system can make a markup for a certain multiplier ``X`` ([it all depends on the decision of witnesses](./witnesses.md#data_operations_cost_additional_bandwidth)), then the formula for ``Bnew`` will look like this:
 
-`` Bnew = MAX (0, (W - T) * Bold / W) + N * X``
+``Bnew = MAX (0, (W - T) * Bold / W) + N * X``
 
 ## How VIZ Determines Reservation Ratio
 
-Every time the moving average block size is greater than 25% of the maximum block size `` G '', the blockchain reduces the `` K '' in half. When the load drops, the blockchain increases K again, adding one every minute. Reducing the `` K '' in half ensures that accounts that used less than 50% of the previous reserved bandwidth will not be affected unless the load is caused by very large stack holders.
+Every time the moving average block size is greater than 25% of the maximum block size ``G``, the blockchain reduces the `` K`` in half. When the load drops, the blockchain increases ``K`` again, adding one every minute. Reducing the ``K`` in half ensures that accounts that used less than 50% of the previous reserved bandwidth will not be affected unless the load is caused by very large stack holders.
 
 The formula for calculating the new moving average value for the block size:
 
-```Anew = (99 * Aold + Q) / 100```
+``Anew = (99 * Aold + Q) / 100``
 
 | Symbol               | Measurement unit  | Description                                             |
 | -------------------- | ----------------- | ------------------------------------------------------- |

@@ -44,7 +44,7 @@ To ensure the stable operation of the network, the blockchain distributes emissi
 
 To calculate how many tokens are issued with each new block, you can use the following formula:
 
-```Q = S * 10% / N```
+``Q = S * 10% / N``
 
 where ``Q`` is the number of tokens that will be issued, ``S`` is the total number of all VIZ tokens that are in the system (including shares in terms of VIZ) at the time of the start of the annual emission, ``N`` is the number of generated blocks per year.
 
@@ -126,6 +126,6 @@ An application is considered accepted if, after the specified period, it receive
 
 The formula for calculating the total amount of payments after the expiration of the voting period:
 
-```SUM(Wn * Pn) / SUM(Wn) * M```,
+``SUM(Wn * Pn) / SUM(Wn) * M``,
 
 where ``SUM`` is a function of the mathematical sum, ``Wn`` is the number of shares of participant ``n``, ``Pn`` is the percentage set by participant ``n``, ``M`` is the maximum the amount of [liquid tokens](#viz-token) specified by the creator of the application.
