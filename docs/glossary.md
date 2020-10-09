@@ -38,7 +38,7 @@ Equity tokens (shares) give their owner the right to choose witnesses, vote in t
 
 [More](./economy.md#shares)
 
-## Turquoise Organization
+## Teal Organization
 
 A community, which in its structure is similar to a living organism, in which the participants themselves decide what will be useful for it.
 

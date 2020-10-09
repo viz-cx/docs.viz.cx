@@ -4,15 +4,15 @@ In terms of (self) governance, VIZ aims to be a [decentralized autonomous societ
 
 VIZ has no owners, no company or organization behind it. Participants own VIZ tokens (shares) and decide in which direction the project should develop. It is the owners of shares who solve VIZ problems, think over and propose changes to the code, select people who will keep the network operational, and make efforts to popularize VIZ.
 
-VIZ participants can unite in groups to solve tasks assigned to themselves. Each participant is part of the VIZ community. In other words, VIZ is not just a decentralized organization, it is a decentralized [turquoise organization](./glossary.md#teal). And the goal of this organization is to create and improve the blockchain, on the basis of which social applications can be developed.
+VIZ participants can unite in groups to solve tasks assigned to themselves. Each participant is part of the VIZ community. In other words, VIZ is not just a decentralized organization, it is a decentralized [teal organization](./glossary.md#teal-organization). And the goal of this organization is to create and improve the blockchain, on the basis of which social applications can be developed.
 
 ## Assets
 
-Each VIZ user can own two types of assets: liquid viz tokens and shares tokens.
+Each VIZ user can own two types of assets: liquid VIZ tokens and shares tokens.
 
 ## Liquid token
 
-Liquid token (viz) are blockchain tokens that the owner can freely move between accounts and convert into money, cryptocurrency and [share tokens](#shares) of the VIZ network. It makes sense to keep liquid tokens only for trading on the exchange or for transfers between accounts.
+Liquid token (VIZ) are blockchain tokens that the owner can freely move between accounts and convert into money, cryptocurrency and [share tokens](#shares) of the VIZ network. It makes sense to keep liquid tokens only for trading on the exchange or for transfers between accounts.
 
 ## Shared token shares
 
