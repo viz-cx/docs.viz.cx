@@ -10,7 +10,7 @@ All witnesses who have not entered the current round must wait for a new round t
 
 ## Penalty and exclusion of the delegate from the chain
 
-If a delegate misses a block, he is assigned a penalty (penalty), which is expressed in a temporary decrease in the number of votes by [percentage determined by witnesses](#witness_miss_penalty_percent) (default is 1%), and which will be extinguished after some time, which also [ set by witnesses](#witness_miss_penalty_duration) (default 24 hours).
+If a delegate misses a block, he is assigned a penalty (penalty), which is expressed in a temporary decrease in the number of votes by [percentage determined by witnesses](#witness_miss_penalty_percent) (default is 1%), and which will be extinguished after some time, which also [set by witnesses](#witness_miss_penalty_duration) (default 24 hours).
 
 If, as a result, the delegate has 0 votes, that is, the total percentage of the penalty will be equal to 100%, then the delegate will be excluded from the chain until all penalties have been paid.
 
@@ -68,12 +68,12 @@ Below is a table of the types that the blockchain uses:
 
 <div id="format-table"></div>
 | Type         | Example           | Range                | Description                                                   |
-| ------------ | ----------------- | -------------------- | ------------------------------------------------------------ |
-| VIZ asset    | "1.000 VIZ"       | from 0.001 VIZ | The number of liquid tokens. A string with a decimal number with no more than 3 digits after a period and an obligatory postscript VIZ separated by a space. <br /> Example: "1.123 VIZ" |
+| ------------ | ----------------- | -------------------- | ------------------------------------------------------------- |
+| VIZ asset    | "1.000 VIZ"       | from 0.001 VIZ       | The number of liquid tokens. A string with a decimal number with no more than 3 digits after a period and an obligatory postscript VIZ separated by a space. <br /> Example: "1.123 VIZ" |
 | SHARES asset | "1.000000 SHARES" | from 0.000001 SHARES | The number of share tokens. A string with a decimal number with no more than 6 digits after a period and a mandatory SHARES postscript separated by a space. <br /> Example: "1.123456 SHARES" |
 | µShares      | 1,000,000         | from 0               | The number of micro-share tokens. 1 μShares = 0.000001 SHARES; 1,000,000 µShares = 1.000000 SHARES. Integer.|
-| Percentage   | 1000              | from 1 to 10000      | Percentage in whole number format. 0.01% = 1; 1% = 100; 100% = 10000; |
-| Whole        | 1                 |                      | Integer                                                        |
+| Percentage   | 1000              | from 1 to 10000      | Percentage in integer number format. 0.01% = 1; 1% = 100; 100% = 10000; |
+| Integer      | 1                 |                      | Integer                                                        |
 
 ### account_creation_fee
 
@@ -91,7 +91,7 @@ Added: 1.0.0
 
 An account can be created not only for liquid tokens, but also by delegating part of your shares to a new account at the time of creation. In quantitative terms, creating such an account can be more expensive, but the delegated share can be returned.
 
-This parameter is responsible for how many times more tokens need to be spent when creating an account through the delegation of a share (`` shares = account_creation_fee * create_account_delegation_ratio '').
+This parameter is responsible for how many times more tokens need to be spent when creating an account through the delegation of a share (``shares = account_creation_fee * create_account_delegation_ratio``).
 
 ### create_account_delegation_time
 
@@ -143,9 +143,9 @@ The minimum amount [rshares](./economy.md#rshares), at which the reward will be 
 
 You can calculate the rshares of a specific account using the formula
 
-`` `rshares = s * e%` ``
+```rshares = s * e%```
 
-where `` s '' is the number of effective shares, `` e% '' is the percentage of effective shares and at the same time the amount of energy expended upon reward.
+where ``s`` is the number of effective shares, ``e%`` is the percentage of effective shares and at the same time the amount of energy expended upon reward.
 
 This parameter was introduced to reduce the load on the blockchain: microscopic rewards do not make sense, but they spend node resources in the same way as ordinary ones.
 
@@ -191,9 +191,9 @@ The minimum amount [rshares](./economy.md#rshares), at which the reward will be 
 
 You can calculate the rshares of a specific account using the formula
 
-`` `rshares = s * e%` ``
+```rshares = s * e%```
 
-where `` s '' is the number of effective shares, `` e% '' is the percentage of effective shares and at the same time the amount of energy expended upon reward.
+where ``s`` is the number of effective shares, ``e%`` is the percentage of effective shares and at the same time the amount of energy expended upon reward.
 
 This parameter was introduced to reduce the load on the blockchain: microscopic rewards do not make sense, but they spend node resources in the same way as ordinary ones.
 

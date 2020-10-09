@@ -4,7 +4,7 @@
 
 Децентрализованная автономная организация, в которой каждый держатель доли является руководителем. В реальном мире DAO можно сравнить с акционерным предприятием, но DAO децентрализована, и в ней нет лиц, которые отвечают за сохранение активов инвесторов.
 
-[Wikipedia[en]](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization),[Bitcoinwiki[ru]](https://ru.bitcoinwiki.org/wiki/DAO)
+[Wikipedia[en]](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), [Bitcoinwiki[ru]](https://ru.bitcoinwiki.org/wiki/DAO)
 
 ## Fair DPoS
 
