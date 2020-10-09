@@ -49,7 +49,7 @@ Before reading further, take a look at the legend table below.
 | L                    | integer           | The number of blocks to be generated per week     |
 | E                    | byte              | ``G * L * K`` – maximum throughput at a given load |
 
-** Note: the value of R is set by witnesses, they also determine how much of a share is considered small. In addition, witnesses can prohibit members with a small stake from making transactions. **
+**Note: the value of R is set by witnesses, they also determine how much of a share is considered small. In addition, witnesses can prohibit members with a small stake from making transactions.**
 
 For each specific account, the bandwidth limit is set to ``(S / M) * E``, that is, in proportion to its share in the network. Moreover, ``S = Smax * (100% - R)``, if ``Smax`` is considered normal, and ``S = M * R / C`` for accounts with a small share. This means that some of the bandwidth is taken away from accounts with sufficient stack and distributed among accounts with a small share in the network. If ``Bnew`` exceeds the reserved value, then the account will not be able to send a new transaction. In turn, Bnew is calculated using the following formula:
 

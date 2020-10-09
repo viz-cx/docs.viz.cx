@@ -4,7 +4,7 @@ An account is an account of a member or a group of members [DAO](./glossary.md#d
 
 When an account is created, it is assigned a unique name of length from [2](https://github.com/VIZ-Blockchain/viz-cpp-node/blob/master/libraries/protocol/include/graphene/protocol/config.hpp#L89) selected by the participant as an identifier to [25](https://github.com/VIZ-Blockchain/viz-cpp-node/blob/master/libraries/protocol/include/graphene/protocol/config.hpp#L89) characters Latin alphabet. Two-character accounts are reserved for the very first VIZ members and are no longer assigned. You cannot change the account name after creation.
 
-Account holders can create accounts of the "second level", and those, in turn, the third, etc., which are separated from the main account (and subsequent) by a dot. For example, the account @name (and only he) can create the account @ subname.name, which, in turn, @ subsubname.subname.name, etc.
+Account holders can create accounts of the "second level", and those, in turn, the third, etc., which are separated from the main account (and subsequent) by a dot. For example, the account @name (and only he) can create the account @subname.name, which, in turn, @subsubname.subname.name, etc.
 
 An account has four key pairs (public and private):
 
@@ -375,7 +375,7 @@ Added: 2.0.0
 
 [Format](#props-desc-table): µShares
 
-The number of votes given by the user for each delegate. Calculated by the formula: `` (net s = Shares + Shares of the proxy account) / witnesses_voted_for``.
+The number of votes given by the user for each delegate. Calculated by the formula: ``(net s = Shares + Shares of the proxy account) / witnesses_voted_for``.
 
 ### proxied_vsf_votes
 
