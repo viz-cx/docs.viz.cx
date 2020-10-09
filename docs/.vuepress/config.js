@@ -54,7 +54,7 @@ module.exports = {
     ],
     locales: {
       "/": {
-        label: "English",
+        label: "🇺🇸English",
         selectText: "Languages",
         ariaLabel: "Select language",
         editLinkText: "Edit this page on GitHub",
@@ -87,7 +87,7 @@ module.exports = {
         },
       },
       "/ru/": {
-        label: "Русский",
+        label: "🇷🇺Русский",
         selectText: "Языки",
         ariaLabel: "Выбрать язык",
         editLinkText: "Редактировать страницу на GitHub",
