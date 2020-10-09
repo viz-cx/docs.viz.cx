@@ -33,7 +33,7 @@ Each time a transaction is sent on behalf of an account, the user must sign it u
 
 | Key                       | Permissions                                                   |
 | ------------------------- | ------------------------------------------------------------ |
-| Regular                   | Sending [custom-transactions](./glossary.md#custom-transaction), rewarding users, changing account metadata, any actions with [committee.](./economy.md#committee) |
+| Regular                   | Sending [custom-transactions](./glossary.md#custom-transaction), rewarding users, changing account metadata, any actions with [committee](./economy.md#the-committee). |
 | Active                    | Everything that can be done using a regular key, as well as operations with [assets](./economy.md#assets) and voting for [witnesses](./witnesses.md). |
 | Master                    | Everything that can be done with regular and active keys, as well as replacement of all keys. |
 | Memo                      | Does not allow signing transactions, but it can be used to classify messages, for example, encrypt using the [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) algorithm when transferring tokens |
@@ -101,11 +101,11 @@ If a person already has an account, then he can sign the transaction using his a
 
 To create anonymous accounts, a special @anonymous account was built into the blockchain. To register an account, it is necessary to transfer to it viz tokens with a volume of no less than [indicated by the witnesses](./witnesses.md#account_creation_fee), attach a note with the name of the new account and its public key to the transfer (the private key must be kept in a safe place and no one do not transmit). The note must match the format
 
-`` login: key``,
+``login: key``,
 
-where `` login '' is the name of the new account, `` key '' is its key. The public key, in turn, will be registered as the main, active, regular and communicative.
+where ``login`` is the name of the new account, ``key`` is its key. The public key, in turn, will be registered as the main, active, regular and communicative.
 
-Another way to create an anonymous account is to specify only the public key for the new account, without a colon (``: ''). When @anonymous receives the transfer, it will create a new account using the @ nX.anonymous scheme, where X is the anonymous account number. The @anonymous number is assigned by itself, each time adding one to the number of already created anonymous accounts.
+Another way to create an anonymous account is to specify only the public key for the new account, without a colon (``:``). When @anonymous receives the transfer, it will create a new account using the @ nX.anonymous scheme, where ``X`` is the anonymous account number. The @anonymous number is assigned by itself, each time adding one to the number of already created anonymous accounts.
 
 Anonymous accounts have the same rights as other accounts. And with popular gateways that allow you to transfer funds to other users through their accounts, it will be difficult to identify the owners of anonymous accounts, provided they took precautions to hide their identity. Such gateways can be, for example, exchanges or exchangers.
 
@@ -129,6 +129,7 @@ This section describes the parameters that accounts contain in the form in which
 
 To get started, check out the table of information types that blockchain uses:
 
+<div id="props-desc-table"></div>
 | Type         | Example               | Range                | Description                                                     |
 | ------------ | --------------------- | -------------------- | ------------------------------------------------------------ |
 | VIZ asset    | "1.000 VIZ"           | from 0.001 VIZ       | Number of [liquid tokens](./economy.md#viz-token). A string with a decimal number with no more than 3 digits after a period and a mandatory VIZ postscript separated by a space. <br> Example: "1.123 VIZ" |
@@ -141,7 +142,7 @@ To get started, check out the table of information types that blockchain uses:
 | Time         | "2018-09-30T05:58:57" |                      | Time string type in the format "YYYY-MM-DDThh:mm:ss".        |
 | JSON         | "{"param1":"value"}"  |                      | JSON string                                                  |
 | Account      | "example"             |                      | Account name in string format.                               |
-| KEy          | "VIZ8XwKjAkG5...."    |                      | Public key in string format with "VIZ" prefix.               |
+| Key          | "VIZ8XwKjAkG5...."    |                      | Public key in string format with "VIZ" prefix.               |
 
 ### average_bandwidth
 
