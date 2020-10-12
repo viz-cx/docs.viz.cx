@@ -33,7 +33,7 @@
 
 ## Полезные инструменты
 * [control.viz.world/tools](https://control.viz.world/tools/)
-* [api.dpos.space/viz](http://api.dpos.space/viz/)
+* [api.dpos.space/viz](https://api.dpos.space/viz/)
 * [dpos.space/viz](https://dpos.space/viz) ([исходники](https://github.com/denis-skripnik/dpos.space))
 
 ## Браузерные расширения

@@ -4,7 +4,7 @@ VIZ is a DAC (Decentralized Autonomous Community), this is to say a blockchain s
 
 VIZ is a blockchain platform for social applications, users of which can reward each other with tokens from the issue (ie continuously "printed" blockchain tokens) or their direct transfer. Applications are responsible for the logic of interactions between users, while the blockchain ensures transactions and reliable immutable storage of information.
 
-VIZ consists of two main technical components: a basic consensus based on [Fair DPoS](./glossary.md#fair-dpos) and an application interface (API). The consensus algorithm ensures that the same transactions are recorded in the same order on all nodes (computers with blockchain software installed), and also provides basic blockchain actions: creating accounts, distributing emission, paying users for their actions, and some others. An API is a collection of plugins that are written in the C ++ language and access to these plugins through web interfaces.
+VIZ consists of two main technical components: a basic consensus based on [Fair DPoS](./glossary.md#fair-dpos) and an application interface (API). The consensus algorithm ensures that the same transactions are recorded in the same order on all nodes (computers with blockchain software installed), and also provides basic blockchain actions: creating accounts, distributing emission, paying users for their actions, and some others. An API is a collection of plugins that are written in the C++ language and access to these plugins through web interfaces.
 
 ![](./img/viz_architecture.png)
 

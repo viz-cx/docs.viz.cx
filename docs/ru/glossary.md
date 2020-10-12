@@ -4,7 +4,7 @@
 
 Децентрализованная автономная организация, в которой каждый держатель доли является руководителем. В реальном мире DAO можно сравнить с акционерным предприятием, но DAO децентрализована, и в ней нет лиц, которые отвечают за сохранение активов инвесторов.
 
-[Wikipedia[en]](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), [Bitcoinwiki[ru]](https://ru.bitcoinwiki.org/wiki/DAO)
+[Wikipedia [en]](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), [Bitcoinwiki [ru]](https://ru.bitcoinwiki.org/wiki/DAO)
 
 ## Fair DPoS
 
@@ -42,7 +42,7 @@ DPoS (Delegated proof-of-stake) — это алгоритм достижения
 
 Сообщество, которое по своему устройству похоже на живой организм, в котором участники сами решают, что для него будет полезно.
 
-[reinventingorganizationswiki[en]](http://reinventingorganizationswiki.com/Main_Page), [Wikipedia[ru]](http://ru.wiki-protopia.org/w/Бирюзовая_организация)
+[Reinventing Organizations Wiki [en]](https://reinventingorganizationswiki.com/Main_Page), [Wikipedia [ru]](https://ru.wiki-protopia.org/w/Бирюзовая_организация)
 
 ## Делегаты
 
