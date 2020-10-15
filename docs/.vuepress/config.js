@@ -46,6 +46,7 @@ module.exports = {
    */
   themeConfig: {
     repo: "viz-cx/docs.viz.cx",
+    domain: "docs.viz.cx",
     logo: "/logo.png",
     editLinks: true,
     docsDir: "docs",
@@ -146,9 +147,13 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     "check-md",
-    ['@vuepress/pwa', {
+    "seo",
+    ["@vuepress/pwa", {
       serviceWorker: true,
-      updatePopup: true
-    }]
+      updatePopup: true,
+    }],
+    ["sitemap", {
+      hostname: "https://docs.viz.cx",
+    }],
   ],
 };
