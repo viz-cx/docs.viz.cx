@@ -49,9 +49,6 @@ module.exports = {
     logo: "/logo.png",
     editLinks: true,
     docsDir: "docs",
-    nav: [
-      // {text: 'Guide', link: '/guide/'}
-    ],
     locales: {
       "/": {
         label: "🇺🇸English",
@@ -65,6 +62,7 @@ module.exports = {
             buttonText: "Refresh",
           },
         },
+        // nav: [{ text: "Cookbook", link: "/cookbook/contents" }],
         sidebar: {
           "/": [
             {
@@ -98,7 +96,26 @@ module.exports = {
             buttonText: "Обновить",
           },
         },
+        nav: [{ text: "Рецепты", link: "/ru/cookbook/basic-concept" }],
         sidebar: {
+          "/ru/cookbook/": [
+            {
+              title: "Поваренная книга",
+              collapsable: false,
+              children: [
+                "basic-concept",
+                "economy",
+                "node-types",
+                "operations",
+                "object-structures",
+                "state",
+                "plugins-api",
+                "libraries",
+                "code-examples",
+                "transaction-formatting",
+              ],
+            },
+          ],
           "/ru/": [
             {
               title: "Блокчейн VIZ",
