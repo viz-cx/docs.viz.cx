@@ -155,5 +155,9 @@ module.exports = {
     ["sitemap", {
       hostname: "https://docs.viz.cx",
     }],
+    ["robots", {
+      host: "https://docs.viz.cx",
+      sitemap: "/sitemap.xml"
+    }]
   ],
 };
