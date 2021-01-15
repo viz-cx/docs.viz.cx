@@ -27,6 +27,7 @@
 ## Exchanges
 * **Bitshares**: [USDT](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.USDT) | [BTC](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.BTC) | [BTS](https://wallet.bitshares.org/#/market/XCHNG.VIZ_BTS) | [RUBLE](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUBLE)
 * [VIZPlus.Exchange](https://my.viz.plus/assets/exchange/) ([sources](https://github.com/vizplus/exchanger))
+* [Coins.Black](https://coins.black/xchange_USDTERC_to_VIZ/) exchange service
 
 ## Information resources
 * [control.viz.world/media](https://control.viz.world/media/tags/en/) ([sources](https://github.com/VIZ-Blockchain/viz-php-control-panel))
@@ -37,7 +38,7 @@
 * [control.viz.world/tools](https://control.viz.world/tools/)
 * [api.dpos.space/viz](https://api.dpos.space/viz/)
 * [dpos.space/viz](https://translate.google.com/translate?sl=ru&tl=en&u=https://dpos.space/viz) ([sources](https://github.com/denis-skripnik/dpos.space))
-* [Free Speech Project [beta]](https://hackathon-on-internet-freedom.github.io/Free-Speech-Project/fsp.html) ([sources](https://github.com/Hackathon-on-Internet-freedom/Free-Speech-Project))
+* [Free Speech Project](https://hackathon-on-internet-freedom.github.io/Free-Speech-Project/dapp.html) ([sources](https://github.com/Hackathon-on-Internet-freedom/Free-Speech-Project))
 
 ## Browser extensions
 * [Chrome](https://chrome.google.com/webstore/detail/vizonator/iehoehfkanaobnbldjfjfabbpaiiojnp)
