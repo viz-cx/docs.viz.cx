@@ -30,13 +30,19 @@
 
 ## PHP
 
-Сложность разработки поддержки VIZ на PHP в том, что нет стандартных библиотек для работы с криптографией. Поэтому необходим полный доступ к серверу, чтобы собрать secp256k1 для PHP и включить поддержку [GMP](https://ru.wikipedia.org/wiki/GNU_Multi-Precision_Library). Это накладывает определенные ограничения на разработчиков (требует опыт в администрировании).
+После перехода на адаптированные библиотеки BigNumber и Elliptic Curve стало доступным использовать криптографию без сборки secp256k1 для PHP и включения поддержки [GMP](https://ru.wikipedia.org/wiki/GNU_Multi-Precision_Library).
 
-Несмотря на это, существует [библиотека php-graphene-node-client с поддержкой VIZ](https://github.com/t3ran13/php-graphene-node-client), установка которого возможна через Docker.
+[Библиотека viz-php-lib](https://github.com/VIZ-Blockchain/viz-php-lib) поддерживает JsonRPC, работу с ключами, формирование транзакций, шифрование сообщение через shared key (совместимое с viz-js-lib), присутствуют примеры, поддержка PSR-4 и установка без дополнительных зависимостей (all-in-one).
+
+[Библиотека php-graphene-node-client с поддержкой VIZ](https://github.com/t3ran13/php-graphene-node-client), установка которого возможна через Composer.
 
 ## GO
 
 [Библиотека viz-go-lib](https://github.com/VIZ-Blockchain/viz-go-lib) отлично подходит для API запросов и изучения формирования транзакций. К сожалению документации по библиотеке нет, как и примеров с отдельными операциями.
+
+## Swift 
+
+[Библиотека viz-swift-lib](https://github.com/VIZ-Blockchain/viz-swift-lib) — библиотека на Swift, установка которой возможна через [Swift Package Manager](https://swiftpackageindex.com/VIZ-Blockchain/viz-swift-lib).
 
 ## Dart
 
@@ -46,9 +52,8 @@
 
 ## Другое
 
-Если вы не нашли требуемый язык программирования, то можно обратить внимание на существующие библиотеки для EOS и Steem. Чтобы модифицировать их и получить поддержку VIZ достаточно проверить формат json-rpc запросов, поменять chain_id (в VIZ он равен 2040effda178d4fffff5eab7a915d4019879f5205cc5392e4bcced2b6edda0cd — это префикс для подписи сырых транзакций) и настроить конструктор операций.
+Если вы не нашли требуемый язык программирования, то можно обратить внимание на существующие библиотеки для EOS и Steem. Чтобы модифицировать их и получить поддержку VIZ достаточно проверить формат json-rpc запросов, поменять chain_id (в VIZ он равен `2040effda178d4fffff5eab7a915d4019879f5205cc5392e4bcced2b6edda0cd` — это префикс для подписи сырых транзакций) и настроить конструктор операций.
 
  - [C# Ditch](https://github.com/Chainers/Ditch) — быстрая и простая библиотека на C# использующая .NET стандарта 2.0;
  - [Elixir API wrapper](https://github.com/metachaos-systems/steemex) — библиотека на Elixir для API-запросов;
- - [Swift Steem](https://github.com/steemit/swift-steem) — библиотека на Swift;
  - [viz-php-control-panel](https://github.com/VIZ-Blockchain/viz-php-control-panel) — контрольная панель для VIZ с демо-приложением в виде медиа-платформой на PHP (стоит обратить внимание на [класс для выполнения JSON-RPC запросов viz_jsonrpc.php](https://github.com/VIZ-Blockchain/viz-php-control-panel/blob/master/class/viz_jsonrpc.php)).
