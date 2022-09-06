@@ -21,6 +21,7 @@
 * [PHP](https://github.com/t3ran13/php-graphene-node-client)
 * [GoLang](https://github.com/VIZ-Blockchain/viz-go-lib)
 * [Python](https://github.com/VIZ-Blockchain/viz-python-lib)
+* [Python](https://github.com/ksantoprotein/thallid-viz)
 * [Dart](https://github.com/VizTower/viz-transaction)
 * [C#](https://github.com/lososeg/Graphene.Viz)
 
@@ -28,6 +29,7 @@
 * **Bitshares**: [USDT](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.USDT) | [BTC](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.BTC) | [BTS](https://wallet.bitshares.org/#/market/XCHNG.VIZ_BTS) | [bitRUBLE](https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUBLE)
 * [VIZPlus.Exchange](https://my.viz.plus/assets/exchange/) ([исходники](https://github.com/vizplus/exchanger))
 * [Coins.Black](https://coins.black/xchange_USDTERC_to_VIZ/) обменный сервис
+* [Menaskop.xyz](https://menaskop.xyz/) обменный сервис
 
 ## Информационные ресурсы
 * [control.viz.world/media](https://control.viz.world/media/tags/en/) ([исходники](https://github.com/VIZ-Blockchain/viz-php-control-panel))
