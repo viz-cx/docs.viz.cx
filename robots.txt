@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https:/docs.viz.cx/sitemap.xml
+Host: https://docs.viz.cx
