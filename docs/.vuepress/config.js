@@ -147,7 +147,7 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     "check-md",
-    "seo",
+    // "seo",
     ["@vuepress/pwa", {
       serviceWorker: true,
       updatePopup: true,
