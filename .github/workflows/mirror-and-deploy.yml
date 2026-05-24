@@ -41,16 +41,21 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Patch VitePress base for docs.viz.cx root serving
+        run: |
+          sed -i "s|base: '/viz-cpp-node/'|base: '/'|" docs/.vitepress/config.mts
+          grep -n "base:" docs/.vitepress/config.mts
+
       - name: Build VitePress
         run: npm run build
 
       - name: Add CNAME
-        run: echo 'docs.viz.cx' > docs/.vitepress/dist/CNAME
+        run: echo 'docs.viz.cx' > dist/CNAME
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: dist
 
       - id: deploy
         name: Deploy to GitHub Pages
